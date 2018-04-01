@@ -8,7 +8,9 @@ var path = require("path"),
         " accum.start();"+
         " isaac"
     )*/;
-    
+
+bcrypt.setRandomFallback(require('crypto').randomBytes);
+
 module.exports = {
 
     "encodeBase64": function(test) {
